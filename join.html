@@ -14,7 +14,7 @@
   <header>
     <nav class="container">
       <a class="link-logo" href="index.html">
-        <img class="logo" src="img/logo.svg" alt="logo petinder"/> 
+        <img class="logo" src="img/logo.svg" alt="logo petinder"> 
       </a>
       <ul class="menu-links">
         <li><a href="about.html">Sobre petinder</a></li>
@@ -28,7 +28,7 @@
       <h1 class="title">Házte socio</h1>
       <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
 
-      <form action="">
+      <form>
         <fieldset>
           <legend>Datos personales</legend>
 
@@ -45,7 +45,9 @@
           <input type="text" id="dni" name="dni" placeholder="DNI" required>
 
           <label for="fecha">Fecha de Nacimiento:</label>
-          <input type="date" id="nombre" name="nombre"  placeholder="dd/mm/aaaa" >
+          <input type="text" id="fecha" name="fecha"  placeholder="dd/mm/aaaa" >
+		  <!--<input type="date" id="fecha" name="fecha"  placeholder="dd/mm/aaaa" -->
+		  <!--No se puede poner un placeholder a un input de tipo "date" -->
         </fieldset>
 
         <fieldset>
@@ -107,8 +109,9 @@
         </fieldset>
         <em>*Todos los campos marcados son obligatorios</em>
         <br>
+		<label for="micheckbox"></label>
         <input type="checkbox" name="micheckbox" value="1" class="checkbox">
-        <label for="micheckbox">He leído y acepto la política de privacidad y las condiciones de uso</label>
+        <span>He leído y acepto la política de privacidad y las condiciones de uso</span>
         <br>
         <button id="enviar" >Enviar</button>
         <br>
