@@ -42,10 +42,10 @@
           <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
 
           <label for="dni" class="required">DNI:</label>
-          <input type="text" id="dni" name="dni" placeholder="DNI" required>
+          <input type="text" id="dni" name="dni" placeholder="DNI" pattern="^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]$" required>
 
           <label for="fecha">Fecha de Nacimiento:</label>
-          <input type="text" id="fecha" name="fecha"  placeholder="dd/mm/aaaa" >
+          <input type="text" id="fecha" name="fecha" pattern="^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/(19|20)\d{2}$" placeholder="dd/mm/aaaa" >
 		  <!--<input type="date" id="fecha" name="fecha"  placeholder="dd/mm/aaaa" -->
 		  <!--No se puede poner un placeholder a un input de tipo "date" -->
         </fieldset>
@@ -63,7 +63,8 @@
           <input type="text" id="provincia" name="provincia"  placeholder="Provincia" required>
 
           <label for="cp" class="required">Código Postal:</label>
-          <input type="number" id="cp" name="cp"  placeholder="Código Postal" required>
+          <input type="text" id="cp" name="cp"  placeholder="Código Postal" pattern="^(0[1-9]|[1-4][0-9]|5[0-2])\d{3}$" required>
+		  <!--           <input type="number" id="cp" name="cp"  placeholder="Código Postal" pattern="^(0[1-9]|[1-4][0-9]|5[0-2])\d{3}$" required> -->
 
           <label for="pais">País:</label>
  		  <select id="pais"  name="pais">
