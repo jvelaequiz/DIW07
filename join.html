@@ -79,12 +79,15 @@
           <legend>Datos de pago y camiseta</legend>
 
           <label for="pago"><strong>Metodo de pago:</strong></label><br>
+		  <label for="Transferencia"></label> 
           <input type="radio"  name="pago" id="transferencia" title="transferencia" value="transferencia" checked>
-          <label for="Transferencia" class="radio">Transferencia</label> 
+          <span class="radio">Transferencia</span> 
+		  <label for="tarjeta"></label>
           <input type="radio" name="pago" id="tarjeta" title="tarjeta" value="tarjeta">
-          <label for="tarjeta" class="radio">Tarjeta de crédito</label> 
+          <span class="radio">Tarjeta de crédito</span>
+		  <label for="paypal"></label>
           <input type="radio" name="pago" id="paypal" title="paypal" value="paypal">
-          <label for="paypal" class="radio">Paypal</label>
+          <span class="radio">Paypal</span>
           <br><br>
           <label for="camiseta"><strong>Camiseta</strong></label>
           <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
