@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario Petinder">
+    <meta name="author" content="Javier Vela">
+    <meta name="keywords" content="Petinder, join">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <title>Hazte socio</title>
+</head>
+<body class="page-join">
+  <header>
+    <nav class="container">
+      <a class="link-logo" href="index.html">
+        <img class="logo" src="img/logo.svg" alt="logo petinder"/> 
+      </a>
+      <ul class="menu-links">
+        <li><a href="about.html">Sobre petinder</a></li>
+        <li><a href="tshirt.html">Camiseta</a></li>
+        <li><a href="join.html"><strong>Hazte socio</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <h1 class="title">Házte socio</h1>
+      <p>Colabora con Petinder haciéndote socio por solo 15 euros mensuales. Con muy poco puedes ayudar mucho a nuestros amigos peludos. Además puedes comprar nuestra exclusiva camiseta por solo 10 euros que se añadirán al primer pago. Rellena el siguiente formulario para unirte a nosotros:</p>
+
+      <form action="">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <label for="nombre" class="required">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[a-zA-Z'-]+" maxlength="64" minlength="2" autofocus required>
+
+          <label for="apellidos" class="required">Apellidos:</label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="[a-zA-Z'-]+" maxlength="128" minlength="2" required>
+
+          <label for="correo" class="required">Correo Electronico:</label>
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+
+          <label for="dni" class="required">DNI:</label>
+          <input type="text" id="dni" name="dni" placeholder="DNI" required>
+
+          <label for="fecha">Fecha de Nacimiento:</label>
+          <input type="date" id="nombre" name="nombre"  placeholder="dd/mm/aaaa" >
+        </fieldset>
+
+        <fieldset>
+          <legend>Dirección</legend>
+
+          <label for="calle" class="required">Calle y número:</label>
+          <input type="text" id="calle" name="calle"  placeholder="Calle y número" required>
+
+          <label for="ciudad" class="required">Ciudad:</label>
+          <input type="text" id="ciudad" name="ciudad"  placeholder="Ciudad" required>
+
+          <label for="provincia" class="required">Provincia:</label>
+          <input type="text" id="provincia" name="provincia"  placeholder="Provincia" required>
+
+          <label for="cp" class="required">Código Postal:</label>
+          <input type="number" id="cp" name="cp"  placeholder="Código Postal" required>
+
+          <label for="pais">País:</label>
+ 		  <select id="pais"  name="pais">
+			  <option value="" disabled selected hidden>Seleccionar</option>
+			  <option value="Andorra" >Andorra</option>
+			  <option value="España" >España</option>
+              <option value="Francia" >Francia</option>
+			  <option value="Otro" >Otro</option>  
+		  </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Datos de pago y camiseta</legend>
+
+          <label for="pago"><strong>Metodo de pago:</strong></label><br>
+          <input type="radio"  name="pago" id="transferencia" title="transferencia" value="transferencia" checked>
+          <label for="Transferencia" class="radio">Transferencia</label> 
+          <input type="radio" name="pago" id="tarjeta" title="tarjeta" value="tarjeta">
+          <label for="tarjeta" class="radio">Tarjeta de crédito</label> 
+          <input type="radio" name="pago" id="paypal" title="paypal" value="paypal">
+          <label for="paypal" class="radio">Paypal</label>
+          <br><br>
+          <label for="camiseta"><strong>Camiseta</strong></label>
+          <p>Si quieres que te enviemos la camiseta Petinder por 10€ más, selecciona la talla a continuación.</p>
+          <label for="camiseta">Talla Camiseta</label><br>
+          <select  name="camiseta" id="camiseta" class="camiseta" >
+              <option value="" disabled selected hidden>No quiero camiseta</option>
+            <optgroup label="Mujeres">
+              <option value="mujeresS">S</option>
+              <option value="mujeresM">M</option>
+              <option value="mujeresL">L</option>
+              <option value="mujeresXL">XL</option>
+            </optgroup>
+            <optgroup label="Hombres">
+              <option value="hombresS">S</option>
+              <option value="hombresM">M</option>
+              <option value="hombresL">L</option>
+              <option value="hombresXL">XL</option>
+              <option value="hombresXXL">XXL</option>
+            </optgroup>
+          </select>
+
+        </fieldset>
+        <em>*Todos los campos marcados son obligatorios</em>
+        <br>
+        <input type="checkbox" name="micheckbox" value="1" class="checkbox">
+        <label for="micheckbox">He leído y acepto la política de privacidad y las condiciones de uso</label>
+        <br>
+        <button id="enviar" >Enviar</button>
+        <br>
+      </form>
+    </div>
+  </main>  
+  <footer>
+    <div class="container">
+      <span>2021 © Petinder - Javier Vela Equiza</span>
+      <ul class="legal-links">
+        <li><a href="">Términos y condiciones de uso</a></li>
+        <li><a href="">Política de privacidad</a></li>
+        <li><a href="">Cookies</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+  
+</body>
+</html>
